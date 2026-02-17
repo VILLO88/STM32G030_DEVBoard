@@ -109,6 +109,20 @@ See `STM32G030_DEV/STM32G030_DEV.csv` for complete BOM.
 - **Production Files:** Gerbers and assembly files in `STM32G030_DEV/production/`
 - **Firmware:** STM32CubeIDE project in root directory
 
+## Demo Firmware
+
+The included STM32CubeIDE project is a test application that demonstrates UART communication by allowing the user to control the LED blink frequency via serial commands.
+
+### Features
+- User LED (PC6) blinks at a configurable frequency
+- UART interface to change the blink frequency in real-time
+- Uses the onboard CH340E USB-to-Serial converter
+
+### Usage
+1. Connect the board via USB
+2. Open a serial terminal (115200 baud, 8N1)
+3. Send commands to change the LED blink frequency
+
 ## Getting Started
 
 1. Clone this repository
@@ -116,7 +130,7 @@ See `STM32G030_DEV/STM32G030_DEV.csv` for complete BOM.
 3. Open the project in STM32CubeIDE
 4. Build and flash to the board
 
-### Blink Example
+### Basic LED Control
 The User LED is configured on PC6. Toggle it with:
 ```c
 HAL_GPIO_TogglePin(USR_LED_GPIO_Port, USR_LED_Pin);
