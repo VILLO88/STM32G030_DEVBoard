@@ -1,5 +1,7 @@
 # STM32G030 Development Board
 
+![Demo](STM32G030_DEV/Gif.gif)
+
 A compact STM32G030C8T6 development board designed for fast prototyping with breadboard-compatible pinout.
 
 ![Board Top View](STM32G030_DEV/STM32G030_DEV.jpg)
